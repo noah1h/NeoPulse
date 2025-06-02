@@ -32,6 +32,7 @@
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/about.css" />
     <!--End-->
 
 
@@ -40,27 +41,46 @@
     <!--End-->
   </head>
   <body>
+    <div class="sidebar d-lg-none d-md-block">
+      <div class="sidebar-portfolio-logo">Portfolio</div>
+      <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-x-lg x-svg" viewBox="0 0 16 16">
+        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+      </svg>
+      <div class="sidebar-links">
+        <a class="sidebar-link">About</a>
+        <a class="sidebar-link">Projects</a>
+        <a class="sidebar-link">Services</a>
+        <a class="sidebar-link">Contact me</a>
+      </div>
+    </div>
+
+
     <nav id="nav">
       <div class="container-fluid px-5">
-        <div class="row align-items-center"> <!-- Added align-items-center -->
+        <div class="row align-items-center">
           <div class="col-7">
             <div class="portfolio-logo">Portfolio</div>
           </div>
-          <div class="col-5 d-flex justify-content-end align-items-center"> <!-- Also align nav links vertically -->
+          <div class="col-5 d-flex justify-content-end align-items-center">
+            <div class="nav-links-container d-none d-lg-block">
             <a class="nav-links" href="">About</a>
             <a class="nav-links" href="">Projects</a>
             <a class="nav-links" href="">Services</a>
             <button class="nav-button">Contact me</button>
+          </div>
+          <svg class="hamburger-menu d-lg-none d-md-block" xmlns="http://www.w3.org/2000/svg" fill="white" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+          </svg>
           </div>
         </div>
       </div>
     </nav>
     
     <header id="header">
-      <div class="header-left d-flex flex-column">
+      <div class="header-left">
         <div class="header-title">
-          Hi, I'm <span class="portfolio-name">Noah mahmoud,</span>a front-end developer & designer</div>
-          <div class="header-buttons d-flex">
+          Hi, I'm <span class="portfolio-name">Noah mahmoud,</span> a front-end developer & designer</div>
+          <div class="header-buttons">
             <button class="header-button">View my work</button>
             <button class="header-contact-button">Contact me</button>
           </div>
@@ -71,7 +91,62 @@
         <img class="man-img" src="imgs/man.png" alt="" title="Image by @wayhomestudio on freepik">
       </div>
     </header>
+    <section id="companies-section">
+      <div class="companies-title">Companies I worked with:</div>
+      <div class="companies-track">
+        <img src="https://placehold.co/600x400?text=Company+1" alt="Company 1 logo" />
+        <img src="https://placehold.co/600x400?text=Company+2" alt="Company 2 logo" />
+        <img src="https://placehold.co/600x400?text=Company+3" alt="Company 3 logo" />
+        <img src="https://placehold.co/600x400?text=Company+4" alt="Company 4 logo" />
+        <img src="https://placehold.co/600x400?text=Company+5" alt="Company 1 logo" />
+        <img src="https://placehold.co/600x400?text=Company+6" alt="Company 2 logo" />
+        <img src="https://placehold.co/600x400?text=Company+7" alt="Company 3 logo" />
+        <img src="https://placehold.co/600x400?text=Company+8" alt="Company 4 logo" />
+      </div>
+    </section>
+    <section id="about">
+      <div class="container-fluid px-5 pt-3">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12 pt-3">
+            <div class="about-title">About me:</div>
+            <div class="about-desc">Hi there! I’m a passionate front-end developer who loves turning ideas into beautiful, user-friendly websites. With a keen eye for detail and a strong grasp of HTML, CSS, and JavaScript, I build clean and responsive interfaces that adapt seamlessly to any device.
+              <br>
+              <br>
+
+              I enjoy working on projects that challenge me to learn and grow, and I thrive on crafting experiences that are both visually stunning and easy to navigate. Whether it’s a brand new design or refining an existing one, I take pride in making sure every pixel feels purposeful.
+              
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 pt-3">
+            <div class="projects-count">5 Projects</div>
+            <div class="projects-count-desc">Number of projects I've completed <span class="projects-count-info">To see them, head to <a href="#projects">Projects</a></span></div>
+            <img src="imgs/illustration.png" class="illustration-png" alt="">
+          </div>
+          <div class="col-lg-4 col-md-12">
+              <div class="row stats-container">
+                <div class="col-lg-12 col-md-6 col-sm-6">
+                  <div class="stats">
+                    <div class="stat-number">2</div>
+                    <div class="stat-text">Years experience</div>
+                  </div>
+                </div>
+                <div class="col-lg-12 col-md-6 col-sm-6">
+                  <div class="stats-2">
+                    <div class="stat-number">5</div>
+                    <div class="stat-text">Satisfied clients</div>
+                  </div>
+                </div>
+                
+              </div>
+            
+          </div>
+        </div>
+      </div>
+        
+      
+    </section>
 
     <script src="js/animations.js"></script>
+    <script src="js/sidebar.js"></script>
   </body>
 </html>

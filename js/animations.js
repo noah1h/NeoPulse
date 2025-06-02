@@ -30,3 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+window.onload = () => {
+  window.scrollTo(0, 0);
+};

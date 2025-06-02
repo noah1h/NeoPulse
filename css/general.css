@@ -4,7 +4,7 @@
   --primary-color: #3A59D1;
   --secondary-color: #3D90D7;
   --accent-color: #778DA9;
-  --desc-color: #C4C4C4;
+  --desc-color: #a2a2a2;
   --highlight-color: #3d69d7;
   --gradient: linear-gradient(330deg, #1B4D89, #0a44d2);
 }
@@ -16,6 +16,17 @@
   --paragraph-2: 16px;
   --button-2: 14px;
 }
+:root {
+  --heading-1-tablet: 48px;
+  --heading-1-mobile: 40px;
+}
+:root {
+  --button-padding-desktop: 15px 30px;
+  --button-padding-tablet: 14px 28px;
+  --button-padding-mobile: 12px 24px;
+}
+
+
 * {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;

@@ -58,3 +58,74 @@
   border: 2px solid var(--primary-color);
   box-shadow: 0 8px 25px rgba(0, 212, 255, 0.3);
 }
+
+
+
+.hamburger-menu {
+  fill: white;
+  height: 40px;
+}
+.sidebar {
+  position: fixed;
+  top: -100%;
+  right: 0;
+  left: 0;
+  height: 500px;
+  z-index: 9000;
+  background-color: black;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.8s ease;
+}
+
+.open {
+  top: 0;
+}
+
+.x-svg {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  fill: var(--text-color);
+  height: 35px;
+}
+
+.sidebar-portfolio-logo {
+  color: var(--text-color);
+  font-size: 30px;
+  font-weight: 500;
+  padding: 20px;
+}
+.sidebar-links {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sidebar-link {
+  color: var(--background-color);
+  background-color: var(--text-color);
+  border: var(--background-color) 1px solid;
+  width: 90%;
+  margin-top: 20px;
+  padding: 20px;
+  position: relative;
+  border-radius: 100px;
+}
+.sidebar-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 50%;
+  background-color: var(--primary-color);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+.sidebar-link:hover {
+  transform: translateY(-2px);
+}
+
+.sidebar-link:hover::after {
+  width: 90%;
+}

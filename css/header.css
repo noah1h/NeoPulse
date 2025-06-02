@@ -1,0 +1,112 @@
+#header {
+  position: relative;
+  min-height: 100vh;
+}
+.header-right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  left: 65%;
+  background: var(--gradient);
+}
+.man-img {
+  position: absolute;
+  bottom: 0;
+  left: -100px;
+  max-width: 100%;
+}
+.header-left {
+  width: 65%;
+  padding-top: 100px;
+  padding-left: 20px;
+}
+.header-title {
+  margin-left: 20px;
+  color: var(--text-color);
+  font-size: var(--heading-1);
+  width: 70%;
+  font-weight: 700;
+}
+.portfolio-name {
+  color: var(--highlight-color);
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 4px;
+}
+.header-title {
+  display: inline-block;
+  overflow: hidden;
+  line-height: 1.4;
+  white-space: pre-wrap;
+}
+
+.word {
+  display: inline-block;
+  transform: translateY(100%);
+  filter: blur(4px);
+  opacity: 0;
+  animation: slideUp 0.6s forwards;
+}
+
+@keyframes slideUp {
+  to {
+    transform: translateY(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+.header-button {
+  width: fit-content;
+  font-size: var(--button-1);
+  padding: 15px 30px;
+  font-weight: 700;
+  background-color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  color: var(--text-color);
+  margin-top: 50px;
+  margin-left: 20px;
+  border-radius: 100px;
+  transition: all 0.3s ease;
+}
+.header-contact-button {
+  width: fit-content;
+  font-size: var(--button-1);
+  padding: 15px 30px;
+  font-weight: 700;
+  background:transparent;
+  border: 2px solid var(--primary-color);
+  color: var(--text-color);
+  margin-top: 50px;
+  margin-left: 10px;
+  border-radius: 100px;
+  transition: all 0.3s ease;
+}
+
+.header-button:hover {
+  transform: translateY(-3px);
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+  box-shadow: 0 8px 25px rgba(0, 212, 255, 0.3);
+}
+.header-contact-button:hover {
+  transform: translateY(-3px);
+  background-color: var(--primary-color);
+  box-shadow: 0 8px 25px rgba(0, 212, 255, 0.3);
+  
+}
+
+@media (max-width: 991px) {
+.header-right {
+  display: none;
+}
+.header-title {
+  width: 100%;
+}
+}
+@media (max-width: 767px) {
+}
+
+@media (max-width: 575px) {
+}

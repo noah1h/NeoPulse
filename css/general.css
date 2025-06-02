@@ -1,0 +1,29 @@
+:root {
+  --text-color: #E0E1DD;
+  --background-color: #000000;
+  --primary-color: #3A59D1;
+  --secondary-color: #3D90D7;
+  --accent-color: #778DA9;
+  --desc-color: #C4C4C4;
+  --highlight-color: #3d69d7;
+  --gradient: linear-gradient(330deg, #1B4D89, #0a44d2);
+}
+:root {
+  --heading-1: 56px;
+  --paragraph-1: 18px;
+  --button-1: 16px;
+  --heading-2: 48px;
+  --paragraph-2: 16px;
+  --button-2: 14px;
+}
+* {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+html body {
+  background-color: var(--background-color);
+}
+html a {
+  text-decoration: none;
+}

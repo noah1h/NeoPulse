@@ -15,6 +15,15 @@
   bottom: 0;
   left: -100px;
   max-width: 100%;
+  animation: appearFromRight 0.8s;
+}
+@keyframes appearFromRight {
+  from {
+    left: 100%;
+  }
+  to {
+    left: -100px;
+  }
 }
 .header-left {
   width: 65%;
@@ -69,6 +78,7 @@
   margin-left: 20px;
   border-radius: 100px;
   transition: all 0.3s ease;
+  animation: slideRight 0.5s ease-out forwards;
 }
 .header-contact-button {
   width: fit-content;
@@ -82,20 +92,46 @@
   margin-left: 10px;
   border-radius: 100px;
   transition: all 0.3s ease;
+  animation: slideLeft 0.5s ease-out forwards;
 }
 
 .header-button:hover {
-  transform: translateY(-3px);
   background-color: transparent;
   border: 2px solid var(--primary-color);
   box-shadow: 0 8px 25px rgba(0, 212, 255, 0.3);
 }
 .header-contact-button:hover {
-  transform: translateY(-3px);
   background-color: var(--primary-color);
   box-shadow: 0 8px 25px rgba(0, 212, 255, 0.3);
   
 }
+@keyframes slideLeft {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+    filter: blur(4px);
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+    filter: blur(4px);
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+
 
 @media (max-width: 991px) {
 .header-right {

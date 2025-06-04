@@ -1,19 +1,18 @@
 #about {
   min-height: 100vh;
-  padding: 50px;
   padding-top: 100px;
   position: relative;
   background: linear-gradient(to bottom, var(--background-color), var(--light-background-color));
 }
 .about-title {
   font-size: 60px;
-  text-align: left;
+  text-align: center;
   font-weight: 700;
   padding-top: 10px;
 }
 .about-desc {
-  padding-top: 40px;
-  text-align: right;
+  padding-top: 10px;
+  text-align: center;
   font-size: var(--paragraph-2);
   color: var(--desc-color);
 }
@@ -42,4 +41,14 @@
 .about-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 25px rgba(0, 120, 144, 0.3);
+}
+
+
+@media (max-width: 767px) {
+  .about-title {
+    font-size: var(--heading-2);
+  }
+  .about-desc {
+
+  }
 }

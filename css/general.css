@@ -9,6 +9,7 @@
   --highlight-color: #3d69d7;
   --gradient: linear-gradient(330deg, #1B4D89, #0a44d2);
 }
+
 :root {
   --heading-1: 56px;
   --paragraph-1: 18px;
@@ -43,4 +44,24 @@ html body {
 }
 html a {
   text-decoration: none;
+}
+
+.hidden-up {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.4s ease-out;
+}
+.hidden-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.6s ease-out;
+}
+.hidden-right {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: all 0.6s ease-out;
+}
+.visible {
+  opacity: 1;
+  transform: translate(0);
 }
